@@ -3,9 +3,6 @@ import sys
 from wx import *
 
 INF = 100
-class edge():
-	name = ""
-	info = ""
 
 Edge = [
 	[0,   5,   INF, 5,   10,  INF, INF, INF, INF, INF],
@@ -21,6 +18,10 @@ Edge = [
 
 dist = [[0 for i in range(10)] for i in range(10)]
 path = [[0 for i in range(10)] for i in range(10)]
+
+class edge():
+	name = ""
+	info = ""
 map = [edge() for i in range(10)]
 map[0].name = "南门"
 map[0].info = "广西大学主进出口"
